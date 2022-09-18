@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+			<style>
+					*{
+						margin:0;
+						padding:0;
+						box-sizing: border-box;
+						font-family: sans-serif;
+					}
+					ul{
+				float:right;
+				list-style-type:none;
+				margin-top:25px;
+				}
+			ul li{
+				display:inline-block;
+				}
+			ul li a{
+				text-decoration:none;
+				color:black;
+				padding:5px 20px;
+				border:1px solid transparant;
+				transition:0.6s ease;
+				}
+			ul li a:hover{
+				background-color:black;
+				color:white;
+				}
+			ul li.active a{
+				background-color:black;
+				color:white;
+				}
+			.logo img{
+				float:left;
+				width:150px;
+				height:auto;
+				}
+					
+					
+					.row{
+						display:flex;
+						flex-wrap: wrap;
+						width:100%;
+					}
+					.row .column{
+						flex:33.3%;
+						width: auto;
+						overflow: hidden;
+						padding:0.4px;
+						height:100%;
+					}
+					.row .column img{
+						margin:1%;
+						width:100%;
+						height:100%;
+						cursor: pointer;
+						filter: grayscale(1) brightness(0.5);
+						border-radius: 5px;
+						transition: 0.3s linear;
+					}
+					.row .column img:hover{
+						filter: grayscale(0) brightness(1);
+						}
+					@media only screen and (max-width: 800px){
+						.row .column{
+							flex: 50%;
+							}
+					}
+					@media only screen and (max-width: 600px){
+						.row .column{
+							flex: 100%;
+							}
+					}
+			</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="main">
+				<div class="logo">
+				<img src="image/2.png">
+				</div>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li class="active"><a href="gallery.html">Gallery</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact2.html">Contact</a></li>
+				</ul>
+			</div>
+			
+			
+			<div class="row">
+				<div class="column">
+					<img src="12/pexels-valeriia-miller-3151766.jpg" height="600px">
+					<img src="12/pexels-anastasia-belousova-3556686.jpg"height="600px">
+					<img src="12/pexels-anna-tukhfatullina-food-photographerstylist-2638026.jpg"height="600px">
+					<img src="12/pexels-charlotte-may-5946623.jpg"height="600px">
+					<img src="12/pexels-charlotte-may-5946966.jpg"height="600px">
+				</div>
+				<div class="column">
+					<img src="12/pexels-chevanon-photography-302899.jpg"height="600px">
+					<img src="12/pexels-daniela-constantini-5591738.jpg" height="600px">
+					<img src="12/pexels-daria-shevtsova-704970.jpg" height="600px" >
+					<img src="12/pexels-daria-shevtsova-704971.jpg" height="600px">
+					<img src="12/pexels-itschansy-3938932.jpg" height="600px">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
